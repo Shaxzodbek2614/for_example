@@ -38,7 +38,7 @@ def rekordlar_jadvalini_chiqar(rekordlar):
 
 
 def oyinni_oyna(ism):
-    """10 raundlik o'yinni o'ynatadi. Oxirigacha o'ynalsa hisobni, to'xtatilsa None qaytaradi."""
+    """Kimdir 3 ta raund yutguncha o'ynatadi. Oxirigacha o'ynalsa hisobni, to'xtatilsa None qaytaradi."""
     hisob = oyin.yangi_hisob()
     natija_matnlari = {
         "oyinchi": "Siz yutdingiz!",
@@ -46,7 +46,10 @@ def oyinni_oyna(ism):
         "durang": "Durang.",
     }
 
-    for raund in range(1, oyin.RAUNDLAR_SONI + 1):
+    raund = 0
+    # Kimdir kerakli ochkoga yetmaguncha raundlar davom etadi (durang raundlar ham sanaladi)
+    while oyin.oyin_golibi(hisob) is None:
+        raund += 1
         print(f"\n--- {raund}-raund ---")
         oyinchi_tanlovi = oyinchi_tanlovini_sora()
         if oyinchi_tanlovi is None:
@@ -64,7 +67,6 @@ def oyinni_oyna(ism):
     yakuniy_matnlar = {
         "oyinchi": f"Tabriklaymiz, {ism}! O'yinda siz g'olib bo'ldingiz.",
         "kompyuter": "Bu safar kompyuter g'olib. Yana urinib ko'ring!",
-        "durang": "O'yin durang bilan tugadi.",
     }
     print(f"\n{yakuniy_matnlar[golib]}")
     print(f"Ketma-ket eng ko'p g'alabangiz: {hisob['eng_uzun_seriya']}")

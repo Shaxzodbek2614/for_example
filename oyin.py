@@ -2,7 +2,7 @@
 # Bu faylda fayl o'qish/yozish ham, input()/print() ham yo'q.
 import random
 
-RAUNDLAR_SONI = 10  # Bir o'yindagi raundlar soni
+GALABA_UCHUN_OCHKO = 3  # Kim birinchi bo'lib shuncha raund yutsa, o'yin g'olibi bo'ladi
 
 # Raqam -> tanlov nomi (o'yinchi shu raqamlarni kiritadi)
 TANLOVLAR = {1: "tosh", 2: "qaychi", 3: "qog'oz"}
@@ -54,9 +54,9 @@ def hisobni_yangila(hisob, natija):
 
 
 def oyin_golibi(hisob):
-    """O'yin oxiridagi g'olibni qaytaradi: "oyinchi", "kompyuter" yoki "durang"."""
-    if hisob["oyinchi"] > hisob["kompyuter"]:
+    """O'yin g'olibini qaytaradi: "oyinchi" yoki "kompyuter". O'yin hali tugamagan bo'lsa None."""
+    if hisob["oyinchi"] >= GALABA_UCHUN_OCHKO:
         return "oyinchi"
-    if hisob["kompyuter"] > hisob["oyinchi"]:
+    if hisob["kompyuter"] >= GALABA_UCHUN_OCHKO:
         return "kompyuter"
-    return "durang"
+    return None
