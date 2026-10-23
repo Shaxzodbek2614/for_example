@@ -2,7 +2,7 @@
 # Bu faylda fayl o'qish/yozish ham, input()/print() ham yo'q.
 import random
 
-GALABA_UCHUN_OCHKO = 3  # Kim birinchi bo'lib shuncha raund yutsa, o'yin g'olibi bo'ladi
+GALABA_UCHUN_OCHKO = 4  # Kim birinchi bo'lib shuncha raund yutsa, o'yin g'olibi bo'ladi
 
 # Raqam -> tanlov nomi (o'yinchi shu raqamlarni kiritadi)
 TANLOVLAR = {1: "tosh", 2: "qaychi", 3: "qog'oz"}
