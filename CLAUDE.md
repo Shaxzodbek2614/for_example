@@ -4,7 +4,7 @@ Bu papkada terminalda o'ynaladigan **"Tosh-qaychi-qog'oz"** o'yini quriladi. Til
 
 ## O'yin nima qiladi
 
-O'yinchi kompyuterga qarshi o'ynaydi. Bir o'yin **5 raunddan** iborat. Har raundda o'yinchi tanlov qiladi, kompyuter esa tasodifiy tanlaydi. Natija ekranga chiqadi va hisob yangilanadi.
+O'yinchi kompyuterga qarshi o'ynaydi. Bir o'yin **10 raunddan** iborat. Har raundda o'yinchi tanlov qiladi, kompyuter esa tasodifiy tanlaydi. Natija ekranga chiqadi va hisob yangilanadi.
 
 O'yin boshida o'yinchi ismini kiritadi. O'yin oxirida g'olib e'lon qilinadi va rekordlar jadvali ko'rsatiladi.
 
@@ -16,7 +16,7 @@ O'yin boshida o'yinchi ismini kiritadi. O'yin oxirida g'olib e'lon qilinadi va r
 - Ikkala tomon bir xil narsani tanlasa, raund **durang** bo'ladi va hech kimga ochko berilmaydi.
 - O'yinchi tanlovni raqam bilan kiritadi: `1` tosh, `2` qaychi, `3` qog'oz. `0` kiritilsa, o'yin to'xtaydi.
 - Noto'g'ri kiritilgan javob raund hisoblanmaydi. Dastur xatoni aytadi va qayta so'raydi.
-- 5 raunddan keyin ochkosi ko'p tomon yutadi. Ochkolar teng bo'lsa, o'yin durang tugaydi.
+- 10 raunddan keyin ochkosi ko'p tomon yutadi. Ochkolar teng bo'lsa, o'yin durang tugaydi.
 
 ## Rekord
 

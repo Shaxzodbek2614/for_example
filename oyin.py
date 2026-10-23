@@ -2,7 +2,7 @@
 # Bu faylda fayl o'qish/yozish ham, input()/print() ham yo'q.
 import random
 
-RAUNDLAR_SONI = 5  # Bir o'yindagi raundlar soni
+RAUNDLAR_SONI = 10  # Bir o'yindagi raundlar soni
 
 # Raqam -> tanlov nomi (o'yinchi shu raqamlarni kiritadi)
 TANLOVLAR = {1: "tosh", 2: "qaychi", 3: "qog'oz"}

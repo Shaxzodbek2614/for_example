@@ -38,7 +38,7 @@ def rekordlar_jadvalini_chiqar(rekordlar):
 
 
 def oyinni_oyna(ism):
-    """5 raundlik o'yinni o'ynatadi. Oxirigacha o'ynalsa hisobni, to'xtatilsa None qaytaradi."""
+    """10 raundlik o'yinni o'ynatadi. Oxirigacha o'ynalsa hisobni, to'xtatilsa None qaytaradi."""
     hisob = oyin.yangi_hisob()
     natija_matnlari = {
         "oyinchi": "Siz yutdingiz!",
